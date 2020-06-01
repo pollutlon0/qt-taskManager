@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TaskItemInfo</class>
+ <widget class="QWidget" name="TaskItemInfo">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>420</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QWidget" name="title" native="true">
+     <layout class="QGridLayout" name="gridLayout">
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>标题</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="titileLineEdit"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="widget_2" native="true">
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QWidget" name="widget_6" native="true">
+        <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="0,0">
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label_3">
+           <property name="text">
+            <string>分类</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="typeComboBox">
+           <item>
+            <property name="text">
+             <string>工作</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>备忘录</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_5" native="true">
+        <layout class="QHBoxLayout" name="horizontalLayout_6" stretch="1,0">
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>9</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label_6">
+           <property name="text">
+            <string>任务状态</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="statusComboBox">
+           <item>
+            <property name="text">
+             <string>未开始</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>进行中</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>已超时</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>已完成</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="status_2" native="true">
+        <layout class="QHBoxLayout" name="horizontalLayout_8" stretch="1,0,0">
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>9</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label_7">
+           <property name="text">
+            <string>有效期</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="valid">
+           <property name="text">
+            <string>0</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="validUnit">
+           <item>
+            <property name="text">
+             <string>小时</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>天</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>周</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>月</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="widget" native="true">
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QWidget" name="widget_3" native="true">
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QLabel" name="label_4">
+           <property name="text">
+            <string>开始时间</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QDateTimeEdit" name="beginDateTimeEdit">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget_4" native="true">
+        <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="0,0">
+         <item>
+          <widget class="QLabel" name="label_5">
+           <property name="text">
+            <string>失效时间</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QDateTimeEdit" name="validDateTimeEdit_2">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="content" native="true">
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>内容</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTextEdit" name="contentTextEdit"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="confirm" native="true">
+     <layout class="QHBoxLayout" name="horizontalLayout_7">
+      <property name="spacing">
+       <number>6</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>199</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="save">
+        <property name="text">
+         <string>保存</string>
+        </property>
+        <property name="shortcut">
+         <string>Ctrl+S, Return</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>titileLineEdit</tabstop>
+  <tabstop>typeComboBox</tabstop>
+  <tabstop>statusComboBox</tabstop>
+  <tabstop>valid</tabstop>
+  <tabstop>validUnit</tabstop>
+  <tabstop>beginDateTimeEdit</tabstop>
+  <tabstop>validDateTimeEdit_2</tabstop>
+  <tabstop>contentTextEdit</tabstop>
+  <tabstop>save</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

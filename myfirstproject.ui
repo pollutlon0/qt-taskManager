@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MyFirstProject</class>
+ <widget class="QMainWindow" name="MyFirstProject">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>270</height>
+   </rect>
+  </property>
+  <property name="acceptDrops">
+   <bool>false</bool>
+  </property>
+  <property name="windowTitle">
+   <string>MyFirstProject</string>
+  </property>
+  <property name="windowOpacity">
+   <double>0.800000000000000</double>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <layout class="QGridLayout" name="gridLayout" columnstretch="1">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>9</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <item row="0" column="0">
+     <widget class="QMyListWidget" name="listWidget">
+      <property name="styleSheet">
+       <string notr="true">QListWidget{  
+    background:white;  
+    color:black;  
+    border:none;  
+	background-color:transparent;
+}  
+  
+QListWidget::item{  
+    border:none;  
+        height: 40px;
+}  
+  
+QListWidget::item:hover{  
+    background:rgb(252,240,193)  
+}  
+  
+QListWidget::item:selected{  
+    background:rgb(252,233,161);  
+    color:black;  
+}  
+  
+QScrollBar:vertical {                 
+    background:transparent;  
+    width:9px;  
+    margin: 0px 0px 2px 0px;  
+}  
+  
+QScrollBar::handle:vertical {  
+    background: rgb(195, 195, 195);  
+    min-height: 20px;  
+    border-radius: 3px;  
+}  
+  
+QScrollBar::handle:vertical:hover{  
+    background:rgba(0,0,0,30%);  
+}  
+  
+QScrollBar::add-line:vertical {  
+    height: 0px;  
+    subcontrol-position: bottom;  
+    subcontrol-origin: margin;  
+}  
+  
+QScrollBar::sub-line:vertical {  
+    height: 0px;  
+    subcontrol-position: top;  
+    subcontrol-origin: margin;  
+}</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action1">
+   <property name="text">
+    <string>1</string>
+   </property>
+  </action>
+  <action name="action_3">
+   <property name="text">
+    <string>这是下拉菜单</string>
+   </property>
+  </action>
+  <action name="actionasdf">
+   <property name="text">
+    <string>工作</string>
+   </property>
+  </action>
+  <action name="action">
+   <property name="text">
+    <string>备忘录</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QMyListWidget</class>
+   <extends>QListWidget</extends>
+   <header location="global">qmylistwidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
